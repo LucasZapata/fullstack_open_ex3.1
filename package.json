@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "lint": "node_modules/.bin/eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../excercise_3.1_F/ && npm run build --prod && cp -r build ../excercise_3.1_B",
     "deploy": "git push heroku master",
@@ -22,6 +23,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "nodemon": "^2.0.12"
   }
 }

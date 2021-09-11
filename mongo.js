@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 
 
@@ -33,7 +33,7 @@ const AddDB = () => {
 }
 
 if (process.argv.length < 3) {
-    console.log("Please provide password, or passwords and new entry, as arguments: <PASSWORD> <NAME> <NUMBER>")
+    console.log('Please provide password, or passwords and new entry, as arguments: <PASSWORD> <NAME> <NUMBER>')
     process.exit(1)
 }
 
@@ -46,6 +46,6 @@ if (process.argv.length === 3) {
 else if (process.argv.length === 5) {
     AddDB()
 }
-else { 
-    console.log("Please provide password, or passwords and new entry, as arguments: <PASSWORD> <NAME> <NUMBER>")}
+else {
+    console.log('Please provide password, or passwords and new entry, as arguments: <PASSWORD> <NAME> <NUMBER>')}
 
