@@ -8,7 +8,8 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:ui": "rm -rf build && cd ../excercise_3.1_F/ && npm run build --prod && cp -r build ../excercise_3.1_B",
-    "deploy": "git add . && git commit -m uibuild && git push && npm run deploy"
+    "deploy": "git push heroku main",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy"
   },
   "author": "",
   "license": "ISC",
